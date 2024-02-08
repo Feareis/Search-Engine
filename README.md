@@ -41,6 +41,12 @@ The main code is [Moteurderecherche.py](https://github.com/Feareis/Search-Engine
 
 <br/>
 
+<h4 align="center">
+        ⚠️ Only French language use ⚠️
+</h4>
+
+<br/>
+
 ## Installation - 
 
 After cloning and setting up the project files on your local machine, run the following command in your terminal
