@@ -37,7 +37,7 @@ Overall, the program will retrieve all the words contained in each of the docume
 
 <br/>
 
-The main code is [MoteurDeRecherche.py](https://github.com/Feareis/Search-Engine/blob/main/Moteurderecherche.py) and it is fully documented.
+The main code is [Moteurderecherche.py](https://github.com/Feareis/Search-Engine/blob/main/Moteurderecherche.py) and it is fully documented.
 
 <br/>
 
