@@ -30,6 +30,17 @@ This project was carried out during my studies in France to complete my DUT in N
 
 <br/>
 
+Overall, the program will retrieve all the words contained in each of the documents in [media/documents](https://github.com/Feareis/Search-Engine/tree/main/media/documents), then it will retrieve the root of all these words, classify them and give them all the following characteristics in the [index.txt](https://github.com/Feareis/Search-Engine/blob/main/index.txt) file :
+```
+{word root}        {file}   :   {occurrence % in all documents combined}   {appearance number all documents combined}
+```
+
+<br/>
+
+The main code is [MoteurDeRecherche.py](https://github.com/Feareis/Search-Engine/blob/main/Moteurderecherche.py) and it is fully documented.
+
+<br/>
+
 ## Installation - 
 
 After cloning and setting up the project files on your local machine, run the following command in your terminal
@@ -38,8 +49,8 @@ pip install -r requirements.txt
 ```
 Once the packages are installed you are ready to run the server. But first you need to manually add some nltk packages. Move to your project folder, open your best python interpreter and run the following commands
 ```
->>> import nltk
->>> nltk.download()
+import nltk
+nltk.download()
 ```
 A window should open. Select All packages then download snowball_data, stopword and punkt
 
