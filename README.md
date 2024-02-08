@@ -7,12 +7,11 @@
 <p align="center"> 
   <samp>
     <br>
-    「 A program for understanding the basis of certain search engines using similarity calculations 」
+    「 A program for understanding the basis of several search engines using similarity calculations 」
     <br>
     <br>
   </samp>
 </p>
-<br/>
 
 ## Use To Code -
 
@@ -23,11 +22,13 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Javascript](https://img.shields.io/badge/Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)
 
-<hr/>
 <br/>
 
 ## About the project -
 
+This project was carried out during my studies in France to complete my DUT in Networks and Telecommunications, in 2nd year. Its aim was to learn how to manage and develop a Python project using the knowledge acquired during the courses of the last 2 years.
+
+<br/>
 
 ## Installation - 
 
@@ -35,13 +36,32 @@ After cloning and setting up the project files on your local machine, run the fo
 ```
 pip install -r requirements.txt
 ```
-Once the packages are installed you are ready to run the server. But first you need to manually add some nltk packages. run the following command in your terminal
+Once the packages are installed you are ready to run the server. But first you need to manually add some nltk packages. Move to your project folder, open your best python interpreter and run the following commands
 ```
-py
 >>> import nltk
 >>> nltk.download()
 ```
+A window should open. Select All packages then download snowball_data, stopword and punkt
 
+![nltk.dowload()](media/documents/nltk.download().PNG)
+
+Once done, You can run the server. Go back in terminal and type
+```
+python manage.py migrate
+python manage.py runserver
+```
+To access your new little search engine, open your browser and go to the following address [127.0.0.1:8000](http://127.0.0.1:8000)
+
+<br/>
+
+
+
+## Tech Stack - 
+
+- [NLTK](https://www.nltk.org/index.html)
+- [Django](https://www.djangoproject.com/)
+
+<br/>
 
 ## Project Structure - 
 
@@ -92,26 +112,5 @@ py
 ├── index.txt
 ├── manage.py
 ├── Moteurderecherche.py
-├── requirements.txt
 └── README.md
 ```
-
-
-# nltk
-import nltk
-nltk.download()
-select snowball_data, stopword and punkt
-
-
-# server
-open cmd
-go to the project file
-run this command :
-
-python manage.py migrate
-
-python manage.py runserver
-
-
-# Browser
-Go to browser and in url tape : 127.0.0.1:8000
